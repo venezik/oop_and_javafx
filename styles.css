@@ -1,0 +1,12 @@
+.menu-bar {
+    -fx-background-color: #8a4500;
+}
+.right-side {
+    -fx-background-color: #02e60a;
+}
+.left-side{
+    -fx-background-color: #d67d24 ;
+}
+.button{
+    -fx-background-color: #d67d24;
+}

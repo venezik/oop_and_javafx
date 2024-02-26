@@ -1,16 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.oop_and_javafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<BorderPane prefHeight="561.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="file:///C:/Users/jizzy/OneDrive/Documents/GitHub/oop_and_javafx/styles.css" />
+    </stylesheets>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <top>
+        <VBox spacing="10">
+            <MenuBar styleClass="menu-bar">
+                <menus>
+                    <Menu text="File">
+                        <items>
+                            <MenuItem text="Open" />
+                            <MenuItem text="Save" />
+                            <MenuItem text="Exit" />
+                        </items>
+                    </Menu>
+                    <Menu text="Edit">
+                        <items>
+                            <MenuItem text="Cut" />
+                            <MenuItem text="Copy" />
+                            <MenuItem text="Paste" />
+                        </items>
+                    </Menu>
+                    <Menu text="Theme">
+                        <items>
+                            <MenuItem text="Light" />
+                            <MenuItem text="Dark" />
+                        </items>
+                    </Menu>
+                    <Menu text="Help">
+                        <items>
+                            <MenuItem text="About" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <!-- Bar with labels -->
+            <HBox alignment="CENTER" prefHeight="17.0" prefWidth="599.0" spacing="10">
+                <Label>ID</Label>
+                <Label>First Name</Label>
+                <Label>Last Name</Label>
+                <Label>Department</Label>
+                <Label>Major</Label>
+                <Label>Email</Label>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="No content in table." />
+        </VBox>
+    </center>
+
+    <right>
+        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="159.0" spacing="20.0" styleClass="right-side">
+            <VBox alignment="CENTER" prefHeight="183.0" prefWidth="149.0" spacing="10">
+                <TextField promptText="First Name" />
+                <TextField promptText="Last Name" />
+                <TextField promptText="Department" />
+                <TextField promptText="Major" />
+                <TextField promptText="Email" />
+                <TextField promptText="Image URL" />
+                <padding>
+                    <Insets bottom="50.0" top="-50.0" />
+                </padding>
+            </VBox>
+            <VBox spacing="10">
+                <Button prefHeight="34.0" prefWidth="149.0" styleClass="button" text="Clear" />
+                <Button prefHeight="34.0" prefWidth="149.0" text="Add" />
+                <Button prefHeight="34.0" prefWidth="149.0" text="Delete" />
+                <Button prefHeight="34.0" prefWidth="149.0" text="Edit" />
+                <padding>
+                    <Insets top="60.0" />
+                </padding>
+            </VBox>
+            <padding>
+                <Insets left="5.0" right="5.0" top="50.0" />
+            </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+        </VBox>
+    </right>
+
+    <left>
+      <Pane prefHeight="552.0" prefWidth="200.0" styleClass="left-side" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="-28.0" />
+         </BorderPane.margin>
+         <children>
+              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@picture.jpg" />
+                  </image>
+              </ImageView>
+         </children>
+      </Pane>
+    </left>
+
+
+</BorderPane>
