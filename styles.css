@@ -1,12 +1,16 @@
 .menu-bar {
-    -fx-background-color: #8a4500;
+    -fx-background-color: #994800;
 }
 .right-side {
-    -fx-background-color: #02e60a;
+    -fx-background-color: #6ce300;
 }
 .left-side{
-    -fx-background-color: #d67d24 ;
+    -fx-background-color: #b87f31 ;
 }
 .button{
-    -fx-background-color: #d67d24;
+    -fx-background-color: #b87f31;
+}
+.gray-bar{
+    -fx-background-color: #a3a3a3 ;
+    -fx-fill: white;
 }
